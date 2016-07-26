@@ -57,6 +57,14 @@ class BaseTransformer
     }
 
     /**
+     * @param BuilderFactory $factory
+     */
+    public function setFactory(BuilderFactory $factory)
+    {
+        $this->factory = $factory;
+    }
+
+    /**
      * Transform an url or path for thumbor
      *
      * @param string $orig the original url or path
